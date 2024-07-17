@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Octubre 2023 - Mayo 2024",
+    title: "Líder Técnico y Consultor de Datos",
+    company: "Banco Itau Paraguay",
+    description:
+      "A través de la Fábrica de Software de Konecta PY, he colaborado con el Banco Itaú, trabajando en dos equipos bajo la metodología ágil SCRUM. En este rol, he gestionado diversas tareas para cada sprint, desplegadas por integración continua (CI/CD), incluyendo la administración de datos y la mejora de productos. Mi principal responsabilidad fue actuar como gestor con una empresa proveedora de software en el área de seguros, enfocándome en la optimización y mejora continua del producto.",
+   // link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Mayo 2021 - Febrero 2022",
+    title: "Analista de Datos y Reporting SSRS",
+    company: "Banco Basa",
+    description:
+      "A través de la Fábrica de Software de Horizonte S.R.L, he colaborado con el Banco Basa, Durante mi estadía ha sido clave para mi desempeño el análisis de los requerimientos y la interpretación de diagramas de entidad-relación (DER) para generar reportes complejos con tablas temporales, usando SQL Dinámica y uniendo varias Bases de Datos (DB2, MSSQL, PostgreSQL y ORACLE) a través de varios DATASET con SSRS. También he gestionado diccionarios de datos y liderados proyectos de migración de datos, siempre buscando optimizar procesos y garantizar la integridad de la información.",
+   // link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Agosto 2013 - Junio 2024",
+    title: "Desarrollador Full Stack- Analista de Datos- Analista Senior - Data Engineer",
+    company: "Instituto de Previsión Social",
+    description: "A lo largo de estos 10 años, he liderado proyectos cruciales que han dejado una huella significativa en el campo tecnológico. He sido el arquitecto detrás de la recopilación de datos, análisis y diseños meticulosos que han dado forma a sistemas fundamentales, como el Sistema de Recepción Electrónica de Información de IPS (Sistema REI Interno). Además, he liderado el desarrollo de módulos innovadores y ajustes en sistemas vitales, tales como el Sistema de Fiscalización de Intervenciones de Fiscalizadores a Patronales, Sistema de Multas, Comprobación de Derecho, Sistema de Identificaciones y Sistema de Cajas. Durante esta travesía, he perfeccionado mis habilidades en diversas tecnologías y herramientas. Mi destreza en la gestión de bases de datos, que incluye INGRES DB, MSSQL, PostgreSQL, MariaDB, DB2 y Oracle, ha permitido implementaciones sólidas y eficientes. Además, me he distinguido en el desarrollo utilizando herramientas esenciales como el control de versiones GIT y lenguajes clave como PHP, JavaScript, HTML, JQuery y AJAX. He trabajado extensamente con servicios API y web services, asegurando integraciones efectivas y eficientes. Mi sólida comprensión del código estructurado y el patrón de diseño MVC ha sido esencial para crear soluciones robustas y escalables. Mi búsqueda insaciable de conocimiento me llevó a explorar la automatización de servicios mediante la herramienta Pentaho, y he alcanzado un nivel intermedio en el uso de herramientas de análisis de datos como Power BI y Tableau.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
