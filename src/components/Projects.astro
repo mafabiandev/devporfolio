@@ -1,31 +1,43 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import Springsecurity from "./icons/Springsecurity.astro"
+import Intellij from "./icons/Intellij.astro"
+import Php from "./icons/Php.astro"
+import Jwt from "./icons/Jwt.astro"
+import Swagger from "./icons/Swagger.astro"
+import Springboot from "./icons/Springboot.astro"
+import Springdata from "./icons/Springdata.astro"
+import Openjdk from "./icons/Openjdk.astro"
+import Vscode from "./icons/Vscode.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  VSCODE: {
+    name: "VSCode",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: Vscode,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  PHP: {
+    name: "PHP",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: Php,
+  },
+  JWT: {
+    name: "Jwt",
+    class: "bg-[#003159] text-white",
+    icon: Jwt,
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "API RestFull con PHP",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
+      "Desarrollé desde cero una API Restfull con PHP, asegurando un diseño modular y escalable. Implementé autenticación JWT para proteger los endpoints y gestionar sesiones de usuario de forma segura. La API incluye operaciones CRUD completas, manejo de errores y validaciones, ofreciendo una base sólida para futuras expansiones y mejoras.",
+   // link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    image: "/projects/apiphp.webp",
+    tags: [TAGS.PHP, TAGS.JWT, TAGS.VSCODE],
   },
   {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
