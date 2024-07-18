@@ -1,39 +1,91 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import Springsecurity from "./icons/Springsecurity.astro"
+import Intellij from "./icons/Intellij.astro"
+import Php from "./icons/Php.astro"
+import Jwt from "./icons/Jwt.astro"
+import Swagger from "./icons/Swagger.astro"
+import Springboot from "./icons/Springboot.astro"
+import Springdata from "./icons/Springdata.astro"
+import Openjdk from "./icons/Openjdk.astro"
+import Vscode from "./icons/Vscode.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  SWAGGER: {
+    name: "SWAGGER",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: Swagger,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  INTELLIJ: {
+    name: "IDE Intellij",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: Intellij,
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-[#003159] text-white",
+    icon: Php,
+  },
+  JWT: {
+    name: "JWT",
+    class: "bg-[#003159] text-white",
+    icon: Jwt,
+  },
+  SPRINGBOOT: {
+    name: "SPRINGBOOT",
+    class: "bg-[#003159] text-white",
+    icon: Springboot,
+  },
+  OPENJDK: {
+    name: "OPENJDK",
+    class: "bg-[#003159] text-white",
+    icon: Openjdk,
+  },
+  SPRINGDATA: {
+    name: "SPRINGDATA",
+    class: "bg-[#003159] text-white",
+    icon: Springdata,
+  },
+  SPRINGSECURITY: {
+    name: "SPRINGSECURITY",
+    class: "bg-[#003159] text-white",
+    icon: Springsecurity,
+  },
+  VSCODE: {
+    name: "VSCODE",
+    class: "bg-[#003159] text-white",
+    icon: Vscode,
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "API RestFull con PHP",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Desarrollé desde cero una API Restfull con PHP, asegurando un diseño modular y escalable. Implementé autenticación JWT para proteger los endpoints y gestionar sesiones de usuario de forma segura. La API incluye operaciones CRUD completas, manejo de errores y validaciones, ofreciendo una base sólida para futuras expansiones y mejoras.",
+    //link: "https://svgl.vercel.app/",
+    github: "https://github.com/mafabiandev/apirestfullphp",
+    image: "/projects/apiphp.webp",
+    tags: [TAGS.PHP, TAGS.JWT, TAGS.VSCODE],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "API RestFull con Spring Boot - Platzi Market",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Desarrollé una API Restfull utilizando Spring Boot, integrando Spring Framework, Spring Data JPA y Spring Security en un entorno de desarrollo con IntelliJ para garantizar robustez y seguridad en la gestión de datos.",
+   // link: "https://adventjs.dev",
+    github: "https://github.com/mafabiandev/platzi-market",
+    image: "/projects/spring.webp",
+    tags: [TAGS.SPRINGBOOT, TAGS.SPRINGDATA, TAGS.SPRINGSECURITY, TAGS.SWAGGER, TAGS.OPENJDK, TAGS.INTELLIJ],
+  },
+  {
+    title: "App Calculadora en Java",
+    description:
+      "Esta es una aplicación de Calculadora desarrollada en Java que permite realizar operaciones básicas como suma, resta, multiplicación y división. Incluye un menú interactivo y manejo de excepciones con try-catch para una experiencia robusta y segura.",
+   // link: "https://adventjs.dev",
+    github: "https://github.com/mafabiandev/calculadoraApp/",
+    image: "/projects/java_app.webp",
+    tags: [TAGS.OPENJDK, TAGS.INTELLIJ],
   },
 ]
 ---
