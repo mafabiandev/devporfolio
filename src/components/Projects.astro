@@ -7,6 +7,9 @@ import Springboot from "./icons/Springboot.astro"
 import Springdata from "./icons/Springdata.astro"
 import Openjdk from "./icons/Openjdk.astro"
 import Vscode from "./icons/Vscode.astro"
+import Javascript from "./icons/Javascript.astro"
+import Astroicon from "./icons/Iconoas.astro"
+import Json from "./icons/json.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -46,6 +49,21 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Springdata,
   },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-[#003159] text-white",
+    icon: Javascript,
+  },
+  ASTROICON: {
+    name: "Astro",
+    class: "bg-[#003159] text-white",
+    icon: Astroicon,
+  },
+  JSON: {
+    name: "Json",
+    class: "bg-[#003159] text-white",
+    icon: Json,
+  },
 }
 const PROJECTS = [
   {
@@ -65,6 +83,15 @@ const PROJECTS = [
     github: "https://github.com/mafabiandev/platzi-market",
     image: "/projects/spring.webp",
     tags: [TAGS.SPRINGBOOT, TAGS.SPRINGDATA, TAGS.OPENJDK, TAGS.INTELLIJ],
+  },
+  {
+    title: "Mi Porfolio con Astro",
+    description:
+      "He creado un portfolio web utilizando Astro, optimizando el rendimiento y la velocidad de carga. La interfaz es intuitiva y moderna, destacando mis habilidades y proyectos.",
+    link: "#",
+    github: "https://github.com/mafabiandev/platzi-market",
+    image: "/projects/spring.webp",
+    tags: [TAGS.ASTROICON, TAGS.JAVASCRIPT, TAGS.JSON, TAGS.VSCODE],
   },
   {
     title: "App Calculadora en Java",
