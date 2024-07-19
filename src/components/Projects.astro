@@ -10,6 +10,9 @@ import Vscode from "./icons/Vscode.astro"
 import Javascript from "./icons/Javascript.astro"
 import Astroicon from "./icons/Iconoas.astro"
 import Json from "./icons/json.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Css from "./icons/Css.astro"
+import Bootstrap from "./icons/Bootstrap.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -64,13 +67,28 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Json,
   },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#003159] text-white",
+    icon: Css,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#003159] text-white",
+    icon: Bootstrap,
+  },
 }
 const PROJECTS = [
   {
     title: "API RestFull con PHP",
     description:
       "Desarrollé desde cero una API Restfull con PHP, asegurando un diseño modular y escalable. Implementé autenticación JWT para proteger los endpoints y gestionar sesiones de usuario de forma segura. La API incluye operaciones CRUD completas, manejo de errores y validaciones, ofreciendo una base sólida para futuras expansiones y mejoras.",
-    link: "#",
+    link: "",
     github: "https://github.com/mafabiandev/apirestfullphp",
     image: "/projects/apiphp.webp",
     tags: [TAGS.PHP, TAGS.JWT, TAGS.VSCODE],
@@ -79,19 +97,28 @@ const PROJECTS = [
     title: "API RestFull con Spring Boot - Platzi Market",
     description:
       "Desarrollé una API Restfull utilizando Spring Boot, integrando Spring Framework, Spring Data JPA y Spring Security en un entorno de desarrollo con IntelliJ para garantizar robustez y seguridad en la gestión de datos.",
-    link: "#",
+    link: "",
     github: "https://github.com/mafabiandev/platzi-market",
     image: "/projects/spring.webp",
     tags: [TAGS.SPRINGBOOT, TAGS.SPRINGDATA, TAGS.OPENJDK, TAGS.INTELLIJ],
   },
   {
+    title: "Constancias Instituto de Previsión Social",
+    description:
+      "Las constancias del Instituto de Previsión Social (IPS) son documentos oficiales que contienen información validada internamente, y cada uno de ellos incluye un código QR único que garantiza su autenticidad. Estos documentos se emiten con el propósito de certificar diversos aspectos relacionados con la previsión social y pueden ser verificados fácilmente escaneando el QR correspondiente.",
+    link: "https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=136",
+    github: "",
+    image: "/projects/ipsconstancia.webp",
+    tags: [TAGS.PHP, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.VSCODE],
+  },
+  {
     title: "Mi Porfolio con Astro",
     description:
       "He creado un portfolio web utilizando Astro, optimizando el rendimiento y la velocidad de carga. La interfaz es intuitiva y moderna, destacando mis habilidades y proyectos.",
-    link: "#",
-    github: "https://github.com/mafabiandev/platzi-market",
-    image: "/projects/spring.webp",
-    tags: [TAGS.ASTROICON, TAGS.JAVASCRIPT, TAGS.JSON, TAGS.VSCODE],
+    link: "https://mafabiandev.netlify.app/",
+    github: "https://github.com/mafabiandev/devporfolio",
+    image: "/projects/porfolio.webp",
+    tags: [TAGS.ASTROICON, TAGS.JAVASCRIPT, TAGS.TAILWIND, TAGS.JSON, TAGS.VSCODE],
   },
   {
     title: "App Calculadora en Java",
