@@ -13,6 +13,7 @@ import Json from "./icons/json.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Css from "./icons/Css.astro"
 import Bootstrap from "./icons/Bootstrap.astro"
+import Laravel from "./icons/Laravel.astro"
 import Postman from "./icons/Postman.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
@@ -105,6 +106,11 @@ const IDES = {
     class: "bg-[#003159] text-white",
     icon: Postman,
   },  
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-[#003159] text-white",
+    icon: Laravel,
+  },
 }
 const PROJECTS = [
   {
@@ -136,6 +142,16 @@ const PROJECTS = [
     image: "/projects/ipsconstancia.webp",
     tags: [TAGS.PHP, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
     ides: [IDES.VSCODE],
+  },
+  {
+    title: "Sistema de Recepción Electrónica de Información(REI Externo) - Instituto de Previsión Social",
+    description:
+      "Desarrollo e implementación de ajustes para la gestión eficiente de promociones de pagos y fraccionamientos para empleadores y asegurados, incluyendo modificaciones específicas en los extractos. Optimización del sistema para asegurar precisión y confiabilidad en el procesamiento de datos electrónicos de patronales.",
+    link: "https://servicios.ips.gov.py/newrei/rei/login",
+   // github: "#",
+    image: "/projects/rei.webp",
+    tags: [TAGS.PHP, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
+    ides: [IDES.LARAVEL, IDES.VSCODE],
   },
   {
     title: "Mi Porfolio con Astro",
