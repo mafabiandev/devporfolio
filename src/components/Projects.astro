@@ -1,10 +1,8 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import Springsecurity from "./icons/Springsecurity.astro"
 import Intellij from "./icons/Intellij.astro"
 import Php from "./icons/Php.astro"
 import Jwt from "./icons/Jwt.astro"
-import Swagger from "./icons/Swagger.astro"
 import Springboot from "./icons/Springboot.astro"
 import Springdata from "./icons/Springdata.astro"
 import Openjdk from "./icons/Openjdk.astro"
@@ -43,6 +41,11 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Springboot,
   },
+  SPRINGDATA: {
+    name: "Spring Data",
+    class: "bg-[#003159] text-white",
+    icon: Springdata,
+  },
 }
 const PROJECTS = [
   {
@@ -61,7 +64,7 @@ const PROJECTS = [
     link: "#",
     github: "https://github.com/mafabiandev/platzi-market",
     image: "/projects/spring.webp",
-    tags: [TAGS.SPRINGBOOT, TAGS.OPENJDK, TAGS.INTELLIJ],
+    tags: [TAGS.SPRINGBOOT, TAGS.SPRINGDATA, TAGS.OPENJDK, TAGS.INTELLIJ],
   },
   {
     title: "App Calculadora en Java",
