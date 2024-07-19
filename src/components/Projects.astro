@@ -83,6 +83,23 @@ const TAGS = {
     icon: Bootstrap,
   },
 }
+const IDES = {
+  VSCODE: {
+    name: "VSCode",
+    class: "bg-black text-white",
+    icon: Vscode,
+  },  
+  OPENJDK: {
+    name: "OpenJDK",
+    class: "bg-[#003159] text-white",
+    icon: Openjdk,
+  },
+  INTELLIJ: {
+    name: "Intellij",
+    class: "bg-[#003159] text-white",
+    icon: Intellij,
+  },  
+}
 const PROJECTS = [
   {
     title: "API RestFull con PHP",
@@ -91,7 +108,8 @@ const PROJECTS = [
     link: "#",
     github: "https://github.com/mafabiandev/apirestfullphp",
     image: "/projects/apiphp.webp",
-    tags: [TAGS.PHP, TAGS.JWT, TAGS.VSCODE],
+    tags: [TAGS.PHP, TAGS.JWT],
+    ides: [IDES.VSCODE],
   },
   {
     title: "Constancias Instituto de Previsión Social",
@@ -101,6 +119,7 @@ const PROJECTS = [
     github: "#",
     image: "/projects/ipsconstancia.webp",
     tags: [TAGS.PHP, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
+    ides: [IDES.VSCODE],
   },
   {
     title: "Mi Porfolio con Astro",
@@ -110,6 +129,7 @@ const PROJECTS = [
     github: "https://github.com/mafabiandev/devporfolio",
     image: "/projects/porfolio.webp",
     tags: [TAGS.ASTROICON, TAGS.JAVASCRIPT, TAGS.JSON],
+    ides: [IDES.VSCODE],
   },
   
 ]
@@ -117,7 +137,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, tags, link, github, ides}) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -138,6 +158,18 @@ const PROJECTS = [
               >
                 <tag.icon class="size-4" />
                 {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <ul class="flex flex-row mb-2 gap-x-2">
+          {ides.map((ide) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${ide.class} py-1 px-2 `}
+              >
+                <ide.icon class="size-4" />
+                {ide.name}
               </span>
             </li>
           ))}
