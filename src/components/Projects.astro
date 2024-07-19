@@ -14,6 +14,9 @@ import Tailwind from "./icons/Tailwind.astro"
 import Css from "./icons/Css.astro"
 import Bootstrap from "./icons/Bootstrap.astro"
 import Laravel from "./icons/Laravel.astro"
+import Reactjs from "./icons/Bootstrap.astro"
+import Nodejs from "./icons/Nodejs.astro"
+import Npm from "./icons/Npm.astro"
 import Postman from "./icons/Postman.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
@@ -83,6 +86,21 @@ const TAGS = {
     name: "Bootstrap",
     class: "bg-[#003159] text-white",
     icon: Bootstrap,
+  },
+  NODEJS: {
+    name: "Nodejs",
+    class: "bg-[#003159] text-white",
+    icon: Nodejs,
+  },
+  REACTJS: {
+    name: "Reactjs",
+    class: "bg-[#003159] text-white",
+    icon: Reactjs,
+  },
+  NPM: {
+    name: "Npm",
+    class: "bg-[#003159] text-white",
+    icon: Npm,
   },
 }
 const IDES = {
@@ -154,6 +172,16 @@ const PROJECTS = [
     ides: [IDES.LARAVEL, IDES.VSCODE],
   },
   {
+    title: "RS Clima - Compartí como esta el tiempo por tu ciudad",
+    description:
+      "He creado un portfolio web utilizando Astro, optimizando el rendimiento y la velocidad de carga. La interfaz es intuitiva y moderna, destacando mis habilidades y proyectos.",
+    //link: "https://mafabiandev.netlify.app/",
+    //github: "https://github.com/mafabiandev/devporfolio",
+   // image: "/projects/porfolio.webp",
+    tags: [TAGS.REACTJS, TAGS.NODEJS, TAGS.NPM],
+    ides: [IDES.VSCODE],
+  },
+  {
     title: "Mi Porfolio con Astro",
     description:
       "He creado un portfolio web utilizando Astro, optimizando el rendimiento y la velocidad de carga. La interfaz es intuitiva y moderna, destacando mis habilidades y proyectos.",
@@ -170,8 +198,8 @@ const PROJECTS = [
     //link: "#",
     github: "https://github.com/mafabiandev/calculadoraApp",
     image: "/projects/java_app.webp",
-    tags: [TAGS.ASTROICON, TAGS.JAVASCRIPT, TAGS.JSON],
-    ides: [IDES.OPENJDK, IDES.INTELLIJ],
+    tags: [TAGS.OPENJDK],
+    ides: [IDES.INTELLIJ],
   },
 ]
 ---
