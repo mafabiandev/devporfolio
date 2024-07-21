@@ -3,7 +3,7 @@
 <div align="center">
 <a href="https://mafabiandev.netlify.app/">
 </a>
-<p>Este es mi porfolio web personal, desarrollado utilizando Astro y Tailwind CSS. El objetivo de este proyecto es mostrar mis habilidades, experiencia y proyectos realizados como desarrollador web y SQL Developer.</p>
+<p>Este es mi porfolio web personal, desarrollado utilizando Astro y Tailwind CSS. El objetivo de este proyecto es mostrar mis habilidades, experiencia y proyectos realizados como Desarrollador Web y SQL Developer.</p>
 </div>
 
 <div align="center">
